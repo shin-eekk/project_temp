@@ -3,34 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <title>Tripcar Summer Event</title>
 </head>
 <body>
-    <section id="outpromo" style="background-color: #FFF7E9; margin: 0 auto; max-width: 1200px; display: flex; flex-direction: column; align-items: center;">
+    <section id="outpromo" style="background-color: #FFF7E9; margin: 0 auto; padding: 0 aoto; max-width: 1200px; display: flex; flex-direction: column; align-items: center;">
         <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/projectBananer.png" alt="">
         <div class="wrap" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
             <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/project_coupon.png" alt="">
-            <div style="display: flex; justify-content: center; gap: 32px;">
-                <a href="">
-                    <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/btn_all.png" alt="">
+            <div style="display: flex; justify-content: center; gap: 32px; padding: 100px 0 0 0;">
+                <a href="#none" onclick="showpopupok()" >
+                    <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/btn_all.png" alt="쿠폰전체다운받기" onclick="showImagePopup()">
                 </a>
-                <a href="">
-                    <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/btn_rent.png" alt="">
+                <a href="https://www.i-web.kr/green18/" target="_blank">
+                    <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/btn_rent.png" alt="렌터카예약하기">
                 </a>
             </div>
-                <ul>
-                    <li>쿠폰 다운 기간  6월 16일 ~ 7월 4일</li>
-                    <li>할인 적용 기간  6월 16일 ~ 8월 17일</li>
+            <ul style="padding: 50px 0 150px 40px; font-size: 1.25rem; font-weight: 600; font-family: Noto sans KR;">
+                <li>쿠폰 다운 기간 : 6월 16일 ~ 7월 4일</li>
+                <li>할인 적용 기간 : 6월 16일 ~ 8월 17일</li>
+            </ul>
+            <div class="" style="flex-direction: column; justify-content: center;">
+                <ul style="display:flex; justify-content: center; align-items: center; flex-direction: column; padding: 0 0 30px 0;">
+                    <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/promo_subtitle.png" alt="여행을 더욱 알차게 해줄 특가 상품">
+                    <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/promo_subtitle2.png" alt="트립터 호텔&투어&티켓">
+                </ul>
+                <br>
+                <ul style=" display: flex; justify-content: center; padding: 0;">
+                    <li style="list-style: none; font-size: 1.5rem; font-weight: 800; font-family: Noto sans KR; color:black;">트립터 MD 추천 인기 상품</li>
                 </ul>
                 
-                <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/tripter_product.png" alt="">
-            <div style="display: flex; justify-content: center;">
-                <a href="">
-                    <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/btn_more.png" alt="">
-                </a></div>
-        </div>
+                <ul style="display:flex; justify-content: center; align-items: center; flex-direction: row; padding: 30px 0 50px 0; gap: 30px;">
+                    <a href="http://tripterweb.dothome.co.kr/" target="_blank">
+                        <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/tripter_g_tour.png" alt="">
+                    </a>
+                    <a href="http://tripterweb.dothome.co.kr/" target="_blank">
+                        <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/tripter_g_hotel.png" alt="">
+                    </a>
+                </ul>
+                <br>
+                <ul style=" display: flex; justify-content: center; padding: 0;">
+                    <li style="list-style: none; font-size: 1.5rem; font-weight: 800; font-family: Noto sans KR; color:black;">트립터 국내 인기 특가 상품</li>
+                </ul>
+                <ul style="display:flex; justify-content: center; align-items: center; flex-direction: row; padding: 30px 0 50px 0; gap: 30px;">
+                    <a href="http://tripterweb.dothome.co.kr/" target="_blank">
+                        <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/tripter_kr_tour.png" alt="">
+                    </a>
+                    <a href="http://tripterweb.dothome.co.kr/" target="_blank">
+                        <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/tripter_kr_hotel.png" alt="">
+                    </a>
+                </ul>              
+            </div>                  
+            <div style="display: flex; justify-content: center; align-items: center; padding: 80px 0 140px 0; ">
+                <a href="http://tripterweb.dothome.co.kr/" target="_blank">
+                    <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/btn_more.png" alt="더많은상품보기">
+                </a>
+            </div>
         <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/project_footer.jpg" alt="">
 
     </section>
+    <div id="coupondown2" style="position: fixed; left:0; right:0; top:0; bottom:0; z-index: 1000; background-color: rgba(0,0,0,.5); display: none; flex-direction: column; align-items: center; justify-content: center;">
+        <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/alert_coupon.png">
+    </div>
+
+    <script>
+        function showpopupok(){
+         
+            const couponElement = document.getElementById("coupondown2");
+            const closepopup = document.querySelector("#coupondown2 img");
+
+            if (couponElement.style.display === "none" || couponElement.style.display === "") {
+                couponElement.style.display = "flex";
+            } else {
+                couponElement.style.display = "none";
+            }
+            closepopup.addEventListener("click", () => {
+                couponElement.style.display = "none";
+            });
+        }
+    </script>
+
 </body>
 </html>
