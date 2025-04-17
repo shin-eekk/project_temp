@@ -9,33 +9,33 @@
     <title>Tripcar Summer Event</title>
 </head>
 <body>
-    <section id="outpromo" style="background-color: #FFF7E9; margin: 0 auto; padding: 0 aoto; max-width: 1200px; display: flex; flex-direction: column; align-items: center;">
-        <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/projectBananer.png" alt="">
+    <section id="outpromo" style="background-color: #FFF7E9; margin: 0 auto; padding: 0 auto; max-width: 1200px; display: flex; flex-direction: column; align-items: center;">
+        <img class="top" src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/projectBananer.png" alt="">
         <div class="wrap" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/project_coupon.png" alt="">
-            <div style="display: flex; justify-content: center; gap: 32px; padding: 100px 0 0 0;">
+            <img class="couponimg" src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/project_coupon.png" alt="">
+            <div class="downbtn" style="display: flex; justify-content: center; gap: 32px; padding: 100px 0 0 0;">
                 <a href="#none" onclick="showpopupok()" >
-                    <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/btn_all.png" alt="쿠폰전체다운받기" onclick="showImagePopup()">
+                    <img class="couponbtn" src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/btn_all.png" alt="쿠폰전체다운받기" onclick="showImagePopup()">
                 </a>
                 <a href="https://www.i-web.kr/green18/" target="_blank">
-                    <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/btn_rent.png" alt="렌터카예약하기">
+                    <img class="rentcar" src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/btn_rent.png" alt="렌터카예약하기">
                 </a>
             </div>
             <ul style="padding: 50px 0 150px 40px; font-size: 1.25rem; font-weight: 600; font-family: Noto sans KR;">
-                <li>쿠폰 다운 기간 : 6월 16일 ~ 7월 4일</li>
-                <li>할인 적용 기간 : 6월 16일 ~ 8월 17일</li>
+                <li class="notice">쿠폰 다운 기간 : 6월 16일 ~ 7월 4일</li>
+                <li class="notice">할인 적용 기간 : 6월 16일 ~ 8월 17일</li>
             </ul>
             <div class="" style="flex-direction: column; justify-content: center;">
                 <ul style="display:flex; justify-content: center; align-items: center; flex-direction: column; padding: 0 0 30px 0;">
-                    <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/promo_subtitle.png" alt="여행을 더욱 알차게 해줄 특가 상품">
-                    <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/promo_subtitle2.png" alt="트립터 호텔&투어&티켓">
+                    <img class="textimg" src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/promo_subtitle.png" alt="여행을 더욱 알차게 해줄 특가 상품">
+                    <img class="tripter-product" src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/promo_subtitle2.png" alt="트립터 호텔&투어&티켓">
                 </ul>
                 <br>
                 <ul style=" display: flex; justify-content: center; padding: 0;">
-                    <li style="list-style: none; font-size: 1.5rem; font-weight: 800; font-family: Noto sans KR; color:black;">트립터 MD 추천 인기 상품</li>
+                    <li class="tripter-md" style="list-style: none; font-size: 1.5rem; font-weight: 800; font-family: Noto sans KR; color:black;">트립터 MD 추천 인기 상품</li>
                 </ul>
                 
-                <ul style="display:flex; justify-content: center; align-items: center; flex-direction: row; padding: 30px 0 50px 0; gap: 30px;">
+                <ul class="global" style="display:flex; justify-content: center; align-items: center; flex-direction: row; padding: 30px 0 50px 0; gap: 30px;">
                     <a href="http://tripterweb.dothome.co.kr/" target="_blank">
                         <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/tripter_g_tour.png" alt="">
                     </a>
@@ -45,9 +45,9 @@
                 </ul>
                 <br>
                 <ul style=" display: flex; justify-content: center; padding: 0;">
-                    <li style="list-style: none; font-size: 1.5rem; font-weight: 800; font-family: Noto sans KR; color:black;">트립터 국내 인기 특가 상품</li>
+                    <li class="tripter-kr" style="list-style: none; font-size: 1.5rem; font-weight: 800; font-family: Noto sans KR; color:black;">트립터 국내 인기 특가 상품</li>
                 </ul>
-                <ul style="display:flex; justify-content: center; align-items: center; flex-direction: row; padding: 30px 0 50px 0; gap: 30px;">
+                <ul class="korea" style="display:flex; justify-content: center; align-items: center; flex-direction: row; padding: 30px 0 50px 0; gap: 30px;">
                     <a href="http://tripterweb.dothome.co.kr/" target="_blank">
                         <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/tripter_kr_tour.png" alt="">
                     </a>
@@ -56,18 +56,83 @@
                     </a>
                 </ul>              
             </div>                  
-            <div style="display: flex; justify-content: center; align-items: center; padding: 80px 0 140px 0; ">
+            <div  style="display: flex; justify-content: center; align-items: center; padding: 80px 0 140px 0; ">
                 <a href="http://tripterweb.dothome.co.kr/" target="_blank">
-                    <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/btn_more.png" alt="더많은상품보기">
+                    <img class="morebtn" src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/btn_more.png" alt="더많은상품보기">
                 </a>
             </div>
-        <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/project_footer.jpg" alt="">
+        <img class="eventfooter" src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/project_footer.jpg" alt="이벤트유의사항 안내">
 
     </section>
     <div id="coupondown2" style="position: fixed; left:0; right:0; top:0; bottom:0; z-index: 1000; background-color: rgba(0,0,0,.5); display: none; flex-direction: column; align-items: center; justify-content: center;">
-        <img src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/alert_coupon.png">
+        <img class="couponpop" src="https://raw.githubusercontent.com/shin-eekk/promosource/main/img/alert_coupon.png">
     </div>
-
+<style>
+    @media screen and (max-width: 768px) {
+        section{
+            max-width: 500px !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+      
+        #outpromo .top {
+            max-width: 500px !important;            
+            height: auto !important;
+        }
+        #outpromo .wrap {
+            gap: 20px !important;
+            max-width: 500px !important;
+        }
+        .downbtn{
+            gap: 1rem !important;
+        }
+        .couponimg{
+            max-width: 400px !important;
+        }
+        .couponbtn{
+            max-width: 180px !important;
+        }
+        .rentcar{
+            max-width: 180px !important;
+        }
+        #outpromo ul {
+            padding: 20px 0 !important;
+            margin: 0 auto !important;
+        }
+        #outpromo ul .notice{
+            text-align: row;
+            font-size: 0.75rem;
+        }
+        .textimg{
+            max-width: 500px !important;
+        }
+        .tripter-product{
+            max-width: 300px !important;
+        }
+        .tripter-md, .tripter-kr{
+            font-size: 1.05rem !important;    
+        }
+        .global img, .korea img{
+            max-width: 200px !important;
+        }
+        #outpromo ul a img {
+            max-width: 90%;
+        }
+        #outpromo div {
+            padding: 20px 0 !important;
+        }
+        .morebtn{
+            max-width: 200px !important;
+        }
+        .eventfooter{
+            max-width: 500px !important;
+        }
+        .couponpop{
+            width: 250px !important;
+        }
+    }
+</style>
     <script>
         function showpopupok(){
          
